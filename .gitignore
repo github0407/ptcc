@@ -1,0 +1,11 @@
+*.jpg
+*.jpeg
+*/__pycache__/*
+*.pyc
+*.model
+*.png
+data/*
+*/__MACOSX/*
+!UKTK.txt
+cifar-10-python.tar.gz
+*/cifar-10-batches-py/*
