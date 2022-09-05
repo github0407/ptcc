@@ -2,6 +2,8 @@
 import matplotlib
 matplotlib.use("Agg")
 # import the necessary packages
+import sys, os
+sys.path.append(os.path.join(os.path.abspath(os.path.dirname(__file__)), '..'))
 from pyimagesearch.lenet import LeNet
 from sklearn.metrics import classification_report
 from torch.utils.data import random_split
@@ -36,9 +38,9 @@ device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
 # load the KMNIST dataset
 print("[INFO] loading the KMNIST dataset...")
-trainData = KMNIST(root="data", train=True, download=True,
+trainData = KMNIST(root="data", train=True, download=False,
 	transform=ToTensor())
-testData = KMNIST(root="data", train=False, download=True,
+testData = KMNIST(root="data", train=False, download=False,
 	transform=ToTensor())
 # calculate the train/validation split
 print("[INFO] generating the train/validation split...")

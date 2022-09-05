@@ -12,8 +12,8 @@
             "program": "${file}",
             "console": "integratedTerminal",
             "justMyCode": true,
-            // "args": ["--model", "output/model.pth", "--plot", "output/plot.png"]
-            "args" : ["-d", "D:/ptctt/ddddd/first-cnn/pyimagesearch/datasets/raw-img"]
+            "args": ["--model", "output/model.pth", "--plot", "output/plot.png"]
+            // "args" : ["-d", "D:/ptctt/ddddd/first-cnn/pyimagesearch/datasets/raw-img"]
         }
     ]
 }
